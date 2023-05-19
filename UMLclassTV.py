@@ -63,8 +63,14 @@ def main():
 # Create two TV objects
     tv1 = TV()
     tv2 = TV()
+
 # Turn on TV1 and set the channel and volume level
+    tv1.turnOn()
+    tv1.setchannel(30)
+    tv1.setvolume(3)
 # print
+    print("TV1's channel is", tv1.getchannel(), "and volume level is", tv1.getVolume())
+
 # Turn on TV2 and set the channel and volume level
 # print
 # Run the TestTV program
