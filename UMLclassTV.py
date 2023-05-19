@@ -59,7 +59,10 @@ class TV:
             self.volumeLevel -= 1
 
 # TestTV Program
+def main():
 # Create two TV objects
+    tv1 = TV()
+    tv2 = TV()
 # Turn on TV1 and set the channel and volume level
 # print
 # Turn on TV2 and set the channel and volume level
