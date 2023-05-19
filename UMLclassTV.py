@@ -23,10 +23,17 @@ class TV:
         if self.on and 1 <= channel <= 120:
     # set the channel to the given value
             self.channel = channel
-            
+
 # return the current volume level
+    def getVolume(self):
+        return self.volumeLevel
+    
 # if on is True and channel is between 1 and 7 (inclusive):
+    def setVolume(self, volumeLevel):
+        if self.on and 1 <= volumeLevel <= 7:
     # set the volume level to the given value
+            self.volumeLevel = volumeLevel
+            
 # if on is True and channel is less than 120:
     # increment the channel by 1
 # if on is True and channel is greater tahn 1:
