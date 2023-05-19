@@ -39,10 +39,15 @@ class TV:
         if set.on and self.channel < 120:
     # increment the channel by 1
             self.channel += 1
-            
-# if on is True and channel is greater tahn 1:
+
+# if on is True and channel is greater than 1:
+    def channelDown(self):
+        if self.on and self.channel > 1:
     # decrement the channel by 1
+            self.channel -= 1
+
 # if on is True and volumeLevel is less than 7:
+    
     # increment the volume level by 1
 # if on is True and volumeLevel is greater than 1:
     # decrement the volume level by 1
