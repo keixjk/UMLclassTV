@@ -47,10 +47,16 @@ class TV:
             self.channel -= 1
 
 # if on is True and volumeLevel is less than 7:
-    
+    def volumeUp(self):
+        if self.on and self.volumeLevel < 7:
     # increment the volume level by 1
+            self.volumeLevel += 1
+
 # if on is True and volumeLevel is greater than 1:
+    def volumeDown(self):
+        if self.on and self.volume > 1:
     # decrement the volume level by 1
+            self.volumeLevel -= 1
 
 # TestTV Program
 # Create two TV objects
