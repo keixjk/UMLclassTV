@@ -13,7 +13,11 @@ class TV:
 # set on to False
     def turnOff(self):
         self.on = False
+
 # return the current channel
+    def getChannel(self):
+        return self.channel
+    
 # if on is True and channel is between 1 and 120 (inclusive):
     # set the channel to the given value
 # return the current volume level
