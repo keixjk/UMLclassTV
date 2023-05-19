@@ -66,16 +66,18 @@ def main():
 
 # Turn on TV1 and set the channel and volume level
     tv1.turnOn()
-    tv1.setchannel(30)
-    tv1.setvolume(3)
+    tv1.setChannel(30)
+    tv1.setVolume(3)
 # print
-    print("TV1's channel is", tv1.getchannel(), "and volume level is", tv1.getVolume())
+    print("TV1's channel is", tv1.getChannel(), "and volume level is", tv1.getVolume())
 
 # Turn on TV2 and set the channel and volume level
     tv2.turnOn()
     tv2.setChannel(3)
-    tv2.setvolume(2)
+    tv2.setVolume(2)
 # print
     print("TV2's channel is", tv2.getChannel(), "and volume level is", tv2.getVolume())
-    
+
 # Run the TestTV program
+if __name__ == "__main__":
+    main()
