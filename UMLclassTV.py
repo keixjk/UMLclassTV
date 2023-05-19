@@ -19,7 +19,11 @@ class TV:
         return self.channel
     
 # if on is True and channel is between 1 and 120 (inclusive):
+    def setChannel(self, channel):
+        if self.on and 1 <= channel <= 120:
     # set the channel to the given value
+            self.channel = channel
+            
 # return the current volume level
 # if on is True and channel is between 1 and 7 (inclusive):
     # set the volume level to the given value
